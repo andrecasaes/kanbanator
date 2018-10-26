@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pop</title>
+	<link rel="stylesheet" type="text/css" href="PopUp.css">
+</head>
+<body>
+	<!-- Trigger/Open The Modal -->
+	<button id="abrirModel">Open Modal</button>
+
+	<!-- The Modal -->
+	<div id="inicial" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close icon"></span>
+			<form class="login">
+				<h1 class="titulo">Kanbanator</h1>
+				<input class="email" type="text" name="login" autofocus="true" placeholder="Seu email">
+				<input class="senha" type="password" name="senha" placeholder="Sua senha">
+				<button class="botao botaoLogin">Login</button>
+				<button id="botCad" class="botao botaoCadastro">Cadastro</button>
+			</form>
+		</div>
+	</div>
+	<div id="modalCadastro" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close icon"></span>
+			<form class="login">
+				<h1 class="titulo">Kanbanator</h1>
+				<input class="nome" type="text" name="nome" autofocus="true" placeholder="Qual o seu nome?">
+				<input class="email" type="text" name="login" placeholder="Digite um email! Esse será o seu login">
+				<input class="senha" type="password" name="senha" placeholder="Digite uma senha!">
+				<input class="senha" type="password" name="senha2" placeholder="Confirme a sua senha!">
+				<button class="botao botaoSalvar">Salvar</button>
+				<button class="botao botaoCancelar">Cancelar</button>
+			</form>
+		</div>
+	</div>
+</body>
+<script>
+// Get the modal
+var modal = document.getElementById('inicial');
+
+// Get the button that opens the modal
+var abrir = document.getElementById("abrirModel");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+abrir.onclick = function() {
+	console.log("botao primario");
+	modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+	modal.style.display = "none";
+}
+//-----------------------------------------------------------------------------
+// Get the modal
+var modal2 = document.getElementById('modalCadastro');
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("botCad");
+
+// Get the <span> element that closes the modal
+//var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn2.onclick = function(event) {
+	event.preventDefault(); 
+	console.log(event);
+	console.log("botao cadastro");
+	modal2.style.display = "block";
+}
+</script>
+</html>
