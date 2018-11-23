@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-header">
+     <div class = "LOGO"> &nbsp  &nbsp &nbsp 
+      <div class =   "imgLogo">KAMBANATOR</div>
+    </div>
+    <div class = "EspaçoHeader"> </div>   
+    <div class = "LoginTexto"> 
+    </p>NomeUsuario</div>
+    <div class = "ImagemLogo"></p>&nbsp ImagemLogo</div>  
+  </div>
+  <div class="BARRA">
+    <div class = fundoBarra>
+      <div class = "estruturaBarra">
+      </div>
+    </div>
+    <br>
+  </div>
+  
+  <div class = "grid-kanbam">
+    <div class = "recuodir"></div>
+    <div class = "recuoesq"></div>
+
+    <div class = "HIST">
+      <div class = "fundoestrutura">
+        <div class = "tituloKB" id="histdiv">Historias</div>
+        <div class = "PrimeiroCard">
+          <textarea class="EntradaTexto"></textarea>
+        </div>
+        <div class = EspacamentoColuna>
+
+        </div>
+        <div class = "adicionarCard">
+          <button class="NovoBut" onclick="Historia();">Novo card <font  style="font-size:45px; font-family:Raleway; vertical-align: middle; ">+</font></button>
+          
+
+        </div>  
+      </div>
+    </div>
+
+
+
+    <div class = "TODO">
+      <div class = "fundoestrutura">
+        <div class = tituloKB id="todo">TO DO</div>
+        <div class = "PrimeiroCard">
+          <textarea class="EntradaTexto"></textarea>
+        </div>
+        <div class = EspacamentoColuna>
+
+        </div>
+        <div class = "adicionarCard">
+          <button class="NovoBut" onclick="toDo();">Novo card <font  style="font-size:45px; font-family:Raleway; vertical-align: middle; ">+</font></button>
+        </div>  
+      </div></div>
+      <div class = "DOING"><div class = "fundoestrutura">
+        <div class = tituloKB id="doing">DOING</div>
+        <div class = "PrimeiroCard">
+          <textarea class="EntradaTexto"></textarea>
+        </div>
+        <div class = EspacamentoColuna>
+
+        </div>
+        <div class = "adicionarCard">
+         <button class="NovoBut" onclick="Doing();">Novo card <font  style="font-size:45px; font-family:Raleway; vertical-align: middle; ">+</font></button>
+        </div>  
+      </div></div>
+      <div class = "DONE"><div class = "fundoestrutura">
+        <div class = tituloKB id="done">DONE</div>
+        <div class = "PrimeiroCard">
+          <textarea class="EntradaTexto"></textarea>
+        </div>
+        <div class = EspacamentoColuna>
+
+        </div>
+        <div class = "adicionarCard">
+         <button class="NovoBut" onclick="Done();">Novo card <font  style="font-size:45px; font-family:Raleway; vertical-align: middle; ">+</font></button>
+        </div>  
+      </div></div>
+    </div> 
+    <div class="FOOTER">Footer</div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+  function Historia(){
+    var hist = document.getElementById('histdiv');
+    hist.innerHTML += "<div class = \"PrimeiroCard\"><textarea class=\"EntradaTexto\"></textarea></div><p style = \"  font-size:0px;\"><\p>" 
+  }
+  function toDo(){
+    var todo = document.getElementById('todo');
+    todo.innerHTML += "<div class = \"PrimeiroCard\"><textarea class=\"EntradaTexto\"></textarea></div><p style = \"  font-size:0px;\"><\p>" 
+  }
+  function Doing(){
+    var doing = document.getElementById('doing');
+    doing.innerHTML += "<div class = \"PrimeiroCard\"><textarea class=\"EntradaTexto\"></textarea></div><p style = \"  font-size:0px;\"><\p>" 
+  }
+  function Done(){
+    var done = document.getElementById('done');
+    done.innerHTML += "<div class = \"PrimeiroCard\"><textarea class=\"EntradaTexto\"></textarea></div><p style = \"  font-size:0px;\"><\p>" 
+  }
+</script>
