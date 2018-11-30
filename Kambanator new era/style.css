@@ -1,0 +1,313 @@
+body{
+  background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+  
+}
+
+.MENU { grid-area: menu; }
+.BARRA { grid-area: barra; }
+.LOGIN {grid-area:login;}
+.FOOTER { grid-area: footer; }
+.HEADER {grid-area:header;} 
+.LOGO{grid-area: logo;}
+.PORCENTAGEM{grid-area: porcent;}
+.RECUOBARRA{grid-area:  rec;}
+.grid-kanbam{ grid-area: kb; }
+.grid-header{ grid-area:header}
+
+
+.recuodir{grid-area:RCDIR;}
+.recuoesq{grid-area:RCESQ;}
+.HIST{grid-area:hist;}
+.TODO{grid-area:toDo;}
+.DOING{grid-area:doing;}
+.DONE{grid-area:done;}
+
+
+
+.LOGO{grid-area:Logo;}
+.EspaçoHeader{grid-area:EH;}
+.LoginTexto{grid-area:LT;}
+.ImagemLogo{grid-area:IL;}
+
+.grid-header{
+  display: grid;
+  
+  grid-template-areas:
+    'Logo Logo Logo Logo Logo EH  EH  EH EH  EH EH EH EH EH EH EH EH EH EH EH EH EH EH EH   LT LT LT LT   ';
+  border:absolute;
+  padding:0px;
+  max-height:50px; 
+  min-height:50px; 
+    whidth:100%; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.BOTAOLOGIN{
+  background-color: transparent;
+border: NULL; 
+color: white;
+ font-family: "Raleway";
+ outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+      outline-style: none;
+      border-color: transparent;
+
+
+}
+
+.NovoBut{
+
+  min-width:160px;
+  width: 95%; 
+  min-height:60px;
+
+  border-radius:5px 5px 5px 5px;
+  color:black; 
+  text-align: center;
+  padding: 6px;
+  font-family: "Raleway";
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  overflow:hidden;
+  padding: 0;
+border: none;
+background: none;
+
+}
+.EntradaTexto{
+  background-color:darkgray;
+  min-width:160px;
+  width: 95%; 
+  min-height:60px;
+
+  border-radius:5px 5px 5px 5px;
+  color:black; 
+  text-align: left;
+  padding: 6px;
+  font-family: "Raleway";
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  overflow:hidden;
+
+
+
+}
+
+
+.grid-kanbam{
+  display: grid;
+  grid-template-areas:
+    'RCESQ hist toDo doing done RCDIR'' RCESQ hist toDo doing done RCDIR'' RCESQ hist toDo doing done RCDIR';
+  border:absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  
+}
+.PORCENTAGEM {
+  position: relative;
+  right:-18px;
+  padding: 10px;
+  font-family:  "impact";
+  font-size: 45px;
+  color: white;
+}
+
+.grid-container {
+  
+  left:-1px;
+  top:-1px;
+   min-height:100%;
+  min-width:100%;
+ display:grid; 
+  border:none; 
+  border-top-color:white;
+     align-content:absolute; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-template-areas:
+    'header header header header header header '
+     ' rec barra barra barra barra porcent'
+     'kb kb kb kb kb kb '
+      'fotter footer footer footer footer footer'
+      ;
+     position:absolute; height:100%; width:100%;
+  
+    
+     
+
+  
+}
+.grid-container > div {
+   
+  width :100%;
+  height:100%; 
+ 
+  color:white; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+  
+}
+.recuoesq{
+  min-width: 1px;
+}
+.recuodir{
+ min-width: 40px;
+}
+.LOGO{ 
+   position:relative;
+  color:white;
+  align-content:center;
+  whidth:100%;
+  height:100%;
+  min-height:50px;
+  max-height:50px;
+  background-color: black; 
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: middle;
+  font-size:25px;
+  text-size-adjust:absolute;
+  
+
+}
+
+.imgLogo{
+  position: relative; 
+  top:-20px; 
+  right:-20px;  
+  
+  
+}
+.LOGIN{
+  position:relative;
+  color:white;
+  max-height:40px;
+  background-color: black;  
+  text-align:center;
+ 
+   
+}
+.EspaçoHeader{
+   color:white;
+  min-height:50px;
+  max-height:50px;
+  background-color: black; 
+
+   
+}
+.FOOTER{
+  position: relative;
+
+  font-size: 10PX;
+  text-align: left;
+  left: -110px;
+  font-family: "Raleway";
+  color:#DFE2E5;
+  top:25px;
+}
+.LoginTexto{
+  position:relative; 
+  color:white;
+  min-height:50px;
+  max-height:50px;
+  background-color: black; 
+  text-align:right; 
+  vertical-align:center;
+
+   
+}
+.ImagemLogo{
+   color:white;
+  min-height:10px;
+  
+  
+  background-color: black; 
+
+  
+   
+}
+.MENU{
+  
+  
+}
+.BARRA{
+     position: relative;
+     top:15px;
+     vertical-align: bottom;
+  
+}
+.fundoBarra{
+  background-color: red; 
+  min-height:100px; 
+}
+.estruturaBarra{
+  background-color:white;  
+  min-height: px;  
+}
+.fundoestrutura{
+  
+  
+  max-width:250px;
+   
+  text-align:center; 
+  shape-margin:radio;
+  border-radius:5px 5px 5px 5px;
+  padding:4px; 
+  background-color:#DFE2E5;
+  color:black; 
+  
+
+}
+.PrimeiroCard{
+ background-color:darkgray;
+ min-width:160px;
+ min-height:60px;    
+ border-radius:5px 5px 5px 5px;
+ color:black; 
+ text-align: left;
+ padding: 6px;
+ font-family: "Raleway";
+ font-size: 15px;
+}
+
+.EspacamentoColuna{
+  min-height:5px;
+}
+.adicionarCard{
+  background-color:darkgray;
+ min-width:160px;
+ min-height:60px;    
+ border-radius:5px 5px 5px 5px;
+ color:black;
+ font-family: "Raleway";
+ text-align: center; 
+ vertical-align: middle;
+ font-size: 22px;
+}
+.tituloKB{
+  position:relative; 
+  font-size: 22px;
+  font-family: "Montserrat";
+  /*font-weight: bold;*/
+
+  
+}
+
+
+
