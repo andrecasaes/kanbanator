@@ -20,9 +20,10 @@
      
   </div>
 
-  <div class = "PORCENTAGEM">
-    98%
-    
+  <div class = "PORCENTAGEM" id = "Porcentagem">
+    <div id = "P">100%</div><div id = "testeasdasd"></div>
+    <button onclick="AcumuloKB();" >Crescer </button>
+     <button onclick="ReducaoKB();" >Descrescer </button>
   </div>
 
     <div class ="RECUOBARRA">
@@ -34,7 +35,7 @@
 <div id = "barra" class = "espacoBarra">
 
 
- <div  class = "barraEmSi" ></div>
+ <div  class = "barraEmSi"  id = "barraEmSi"></div>
 
 </div>
 
@@ -53,16 +54,15 @@
 
 
 .barraEmSi{
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00f9cc+24,009ec3+100 */
-background: rgb(0,249,204); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(0,249,204,1) 24%, rgba(0,158,195,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,249,204,1) 24%,rgba(0,158,195,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,249,204,1) 24%,rgba(0,158,195,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f9cc', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */  
-
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+63,f5f7f9+100 */
+background: rgb(246,248,249); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 63%, rgba(245,247,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 63%,rgba(245,247,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 63%,rgba(245,247,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
   font-family: "impact"; 
   height: 30px;
-  width: 95%; 
+   
      border-radius: 15px 15px 15px 15px;
     z-index:2;
 } 
@@ -72,7 +72,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f9cc', end
 </div>
   </div>
 		
-<div class = "grid-kanbam">
+<div class = "grid-kanbam" id = "GRIDKBID">
 <div class = "recuodir"></div>
     <div class = "recuoesq"></div>
 
@@ -198,6 +198,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f9cc', end
 
 
 
+
+
+
 </body>
 </html>	
 <script type="text/javascript">
@@ -272,3 +275,70 @@ btn2.onclick = function(event) {
 }
 </script>
 
+
+<script type="text/javascript">
+
+var numeroKB = 1; 
+
+var numeroKBProntos = 0; 
+
+
+var numeroGenerico = 0; 
+
+
+function testaBarra(numeroGenerico) {
+
+
+var Porcentagem = (100/numeroGenerico); 
+if(Porcentagem<=100){
+document.getElementById("barraEmSi").style.width = Porcentagem+"%";
+}
+}
+
+function Porcentagem(Porc) {
+  var Porcentagem =  Math.round((100/Porc) * 10) / 10;
+  
+  if(Porcentagem>0){
+   document.getElementById("P").innerHTML = Porcentagem+"%";
+   }
+   if(Porcentagem > 100){
+     document.getElementById("P").innerHTML = "100%";
+   }
+   }
+  
+function AcumuloKB(){
+
+numeroKB++;
+testaBarra(numeroKB);
+Porcentagem(numeroKB);
+
+}
+function ReducaoKB(){
+numeroKB--; 
+testaBarra(numeroKB);
+Porcentagem(numeroKB);
+
+}
+</script>
+
+
+<script>
+  
+  class App extends React.Component {
+  componentDidMount () {
+    let left = document.getElementById('histdiv');
+    let right = document.getElementById('todo');
+    dragula([left, right]);
+  }
+  
+  
+
+class Card extends React.Component {
+  constructor (props) {
+    super(props);
+  }
+  
+
+
+React.render(<App />, document.getElementById('GRIDKBID"'));
+</script>
